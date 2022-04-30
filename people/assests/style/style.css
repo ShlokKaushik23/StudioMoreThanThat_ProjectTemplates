@@ -6,6 +6,7 @@
    --footer_color: #B3AEAE;
    --green_color: #54654F;
    --border: #707070;
+   --grey_color: #ccc;
   
   
    /* font-family  */
@@ -214,20 +215,19 @@
 
 
 .container .section .section_content .middle_section{
-    padding: 10% 20%;
+    padding: 0% 20%;
     height: auto;
     display: flex;
     align-items: center;
-
 }
 
 .container .section .section_content .middle_section .about_section{
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
     height: 100%;
-
+    position: relative;
+    margin: 12% 0%;
 }
 
 .container .section .section_content .middle_section .about_section .about_desc {
@@ -253,7 +253,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-
+    position: relative;
 }
 
 
@@ -293,6 +293,10 @@
 }
 
 
+.container.hide{
+    display:none;
+}
+
 
 /* ====== SECTION ONE ======= */
 .container .section .section_one{
@@ -326,11 +330,9 @@
     align-items: flex-start;
 }
 
-
 .container .section .section_one .right_section .right_section_container .full_img{
     height: 100vh;
     width: 100%;
-    
 }
 .container .section .section_one .right_section .right_section_container .full_img img{
     height: 100%;
@@ -346,8 +348,7 @@
 }
 
 .container .section .section_one .left_section .left_section_container{
-    font-family: var(--primary_font);
-    
+    font-family: var(--primary_font);   
 }
 
 
@@ -458,6 +459,18 @@
     object-fit: contain;
 }
 
+/* .container .section .section_two.grid .right_section .right_section_container .landscape_image{
+    width: 540px;
+    height: 100vh;
+    background-color: red;
+}
+.container .section .section_two.grid .right_section .right_section_container .landscape_image img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    object-position: center;
+    object-fit: contain;
+} */
 
 .container .section .section_two .middle_section{
     height: 100%;
@@ -504,6 +517,7 @@
     background-color: #6baf92;
     color: #000;
     border: 0;
+    margin: 0;
 }
 
 
@@ -984,11 +998,14 @@
      object-fit: contain;
  }
 
+
  .container .section .section_four .left_section{
      width: 50%;
      display: flex;
      align-items: center;
      justify-content: center;
+    padding: 1% 1% 1% 0%;
+
  }
 
  .container .section .section_four .left_section .left_section_container .project_portrait_image{
@@ -998,8 +1015,8 @@
  }
 
  .container .section .section_four .left_section .left_section_container .project_portrait_image .portrait_image{
-     width: 40%;
-     height: 60%;
+     width: 100%;
+     height: 100%;
      margin-right: 40px;
  }
 
@@ -1040,16 +1057,14 @@
      display: flex;
  }
 
- .container .section .section_five img {
-     width: 400px;
-     height: 400px;
- }
+ 
 
  .container .section .section_five .left_section{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding: 1% 1% 1% 0%;
 }
 
 .container .section .section_five .left_section .left_section_container .project_portrait_image{
@@ -1058,8 +1073,8 @@
 }
 
 .container .section .section_five .left_section .left_section_container .project_portrait_image .portrait_image{
-    width: 40%;
-    height: 60%;
+    width: 100%;
+    height: 100%;
     margin-right: 40px;
 }
 
@@ -1087,6 +1102,8 @@
 .container .section .section_five .left_section .left_section_container .project_details .project_title{
     font-size: 2.2rem;
     white-space: nowrap; 
+    margin-bottom: 2%;
+
 }
 .container .section .section_five .left_section .left_section_container .project_details .project_desc{
     font-size: 1rem;
@@ -1094,7 +1111,7 @@
 }
 
 .container .section .section_five .right_section {
-    width: 50%;
+    /* width: 100%; */
 }
 .container .section .section_five .right_section .right_section_container{
     height: 100vh;
@@ -1108,7 +1125,7 @@
 }
 .container .section .section_five .right_section .right_section_container .landscape_image{
     width: 540px;
-    height: 280px;
+    height: 100vh;
 }
 .container .section .section_five .right_section .right_section_container .landscape_image img{
     width: 100%;
@@ -1133,7 +1150,7 @@
 }
 .container .section .section_two.land .right_section .right_section_container .landscape_image{
     width: 540px;
-    height: 280px;
+    height: 100vh;
 }
 .container .section .section_two.land .right_section .right_section_container .landscape_image img{
     width: 100%;
@@ -1359,10 +1376,12 @@
         width: 100%;
         background-color: #ffff;
         /* position: relative; */
-        overflow-x: hidden;
+        overflow: hidden;
     }
+  
     .container.line{
-        margin-bottom: 0%;
+        margin-bottom: 0.2rem;
+    
     }
     
     .container .section{
@@ -1371,8 +1390,7 @@
         margin: 0;
         padding: 0;
         outline-style:none;
-        
-
+    
     }
 
     /* ======= Portfolio Main : Screen 1   ===== */
@@ -1380,7 +1398,7 @@
         position:relative;
     }
     .container .section .section_zero .main .portfolio_details{
-        margin: 5% 0 0 5%;
+        margin: 7% 0 0 5%;
     }
 
     .container .section .section_zero .main .portfolio_details h1{
@@ -1414,12 +1432,16 @@
         display: flex;
         flex-direction: column;
         height: 100vh;
+        position: relative;
         /* grid-gap: 50px; */
+        /* display: none; */
         
     }
     .container .section .section_content .left_section {
         padding: 5%;
-    background-color: #fff;
+        background-color: #fff;
+        /* display: none; */
+        position:relative;
 
     }
     .container .section .section_content .left_section .portfolio_content .portfolio_heading h1 {
@@ -1433,7 +1455,7 @@
     .container .section .section_content .left_section .portfolio_content .portfolio_category p{
         font-size: 150%;
         margin: 2% 0;
-    }
+    } 
      
 
     /* ===== MIDDLE  Section ==== */
@@ -1444,9 +1466,11 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: #fff;
+        position: absolute;
+        display: none;
+    
     }
-
+/* 
     .container .section .section_content .middle_section .about_section{
         margin-top: 0%;
     }
@@ -1473,7 +1497,7 @@
     .container .section .section_content .middle_section .contact_section .contact_info p{
         font-size: 150%;
         margin: 5% 0;   
-    }
+    } */
  
 
     /* ========== Right Section ====== */
@@ -1483,20 +1507,110 @@
         display: flex;
         justify-content: center;
         background-color: #fff;
+        display: none;
     }
 
-    .container .section .section_content .right_section .portfolio_image{
+    /* .container .section .section_content .right_section .portfolio_image{
         padding: 10%;
     }
 
 
     .container .section .section_content .right_section .portfolio_image img{ 
-        /* border: 2px solid #000;
-        padding: 2%; */
         object-fit: cover;
-    }
+    } */
 
    
+
+    /* ============ About Section Mobile View ====== */
+
+    .container.hide{
+        display: block;
+    }
+
+    .container .section .section_content .about_section_mobile{
+        height: 100%;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+    }
+
+    .container .section .about_section_mobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 10% 5%;
+    }
+    .container .section .about_section_mobile .about_section_container h1{
+        font-size: 5rem;
+        text-transform: uppercase;
+        font-weight:lighter ;
+        margin: 2% 0%;
+        font-family: 'dream_orphansregular';
+        color: #6baf92;
+    }
+    .container .section .about_section_mobile .about_section_details{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 2% 0% 5% 0%;
+    }
+    
+    .container .section .about_section_mobile .about_section_details .about_details {
+        width: 80%;
+        font-size: 1.5rem;
+    }
+    .container .section .about_section_mobile .about_section_details .about_details .name{
+        font-size: 1.5rem;
+    }
+
+
+    .container .section .about_section_mobile .about_img {
+        width: 400px;
+        height: 400px;
+        margin: 5% 0%;
+    }
+    
+    .container .section .about_section_mobile .about_img img{
+        height: 100%;
+        width: 100%;
+        object-position: center;
+        background-position: center;
+        background-size: contain;
+        border-radius: 50%;
+
+    }
+
+    /* ==== Contact Details ==== */
+    .container .section .about_section_mobile .about_contact{
+
+
+    }
+    .container .section .about_section_mobile .about_contact h1{
+        font-size: 5rem;
+        text-transform: uppercase;
+        font-weight:lighter ;
+        margin: 2% 0%;
+        font-family: 'dream_orphansregular';
+        color: #6baf92;   
+    }
+
+    .container .section .about_section_mobile .about_contact .contact_info p {
+        font-size: 1.5rem;
+        color: #000;
+        margin: 2% 0%;
+
+    }
+
+    .container .section .about_section_mobile .about_contact .contact_info p a {
+        font-size: 1.5rem;
+        color: #000;
+    }
+
 
     /* ===== Project : Spoonfed, Screen 3 : Section: One and Two ========== */
 
@@ -1517,7 +1631,7 @@
         justify-content: center;
         width: 100%;
         padding: 0%;
-        margin: 0%;
+        margin-bottom: -5%;
         height: 100vh;
     }
     .container .section .section_one .right_section .right_section_container .full_img{
@@ -1591,7 +1705,7 @@
         justify-content: center;
         align-items: center;
         height: 100%;
-        margin: 10% 0;
+        margin: 10% 0 0 0;
     }
 
     .container .section .section_two .right_section .right_section_container .section_video{
@@ -1629,6 +1743,7 @@
      .container .section .section_two .middle_section .middle_section_container .view_project{
         font-size: 150%;
         padding: 2%;
+        margin-top: 5%;
     }
 
     .container .section .section_two .left_section{
@@ -1710,9 +1825,10 @@
         height: 100%;
         width: 100%;
         font-size: 150%;
-        padding: 0 12%;
-        margin: 0;
+        padding: 0 13%;
+        /* margin: 0; */
     }
+    
     
     .container .section .section_two.grid .middle_section .middle_section_container .section_desc .project_details{
         margin: 2% 0%;
@@ -1979,6 +2095,69 @@
         margin: 10px;
     }
 
+
+    /* ===== Section Five ===== Portrait and Landscape images */
+
+    .container .section .section_five{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0%;
+    }
+    .container .section .section_five .left_section .left_section_container{
+        display: flex;
+        justify-content: center;
+
+        flex-direction: column;
+        width: auto;
+        padding: 0;
+        margin: 0;
+    }
+    .container .section .section_five .left_section .left_section_container .project_details {
+        margin: 10% 0;
+    }
+    .container .section .section_five .left_section .left_section_container .project_details .project_category{
+        font-size: 150%;
+     }
+     .container .section .section_five .left_section .left_section_container .project_details .project_title{
+        font-size: 450%;
+        margin-bottom: 0;
+    }
+     .container .section .section_five .left_section .left_section_container .project_details .project_title span{
+         /* font-size: 450%; */
+         display: block;
+     }
+     .container .section .section_five .left_section .left_section_container .project_desc{
+         font-size: 200%;
+         margin: -5% 0 0 0;
+     }
+
+    .container .section .section_five .left_section .left_section_container .project_portrait_image{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0;
+        width: 100%;
+       margin: 0;
+    }
+
+    .container .section .section_five .left_section .left_section_container .project_portrait_image .portrait_image {
+        width: 780px;
+        height: 100%;
+        margin-bottom: 10%;
+        padding: 0;
+        margin-right: 0;
+    }
+    .container .section .section_five .right_section {
+        padding: 0;
+    }
+    .container .section .section_five .right_section .right_section_container .landscape_image{
+        width: 780px;
+        height: 100%;
+    }
+
  /* ========= CONTACT SECTION ============ */
 
 .container .section .contact_container h1{
@@ -2082,6 +2261,7 @@
         align-items: center;
         flex-direction: column;
         background-color: #fff;
+        display: none;
     }
 
     .container .section .section_content .middle_section .about_section{
@@ -2122,6 +2302,7 @@
 
     .container .section .section_content  .right_section{
        background-color: #fff;
+       display: none;
     }
  
 
@@ -2181,6 +2362,7 @@
      .container .section .section_two .middle_section .middle_section_container .view_project{
         font-size: 100%;
         padding: 2%;
+        margin-top: 5%;
     }
     .container .section .section_two .left_section .left_section_container .gallery_container{
         margin: 2% 0;
@@ -2301,6 +2483,37 @@
     height: 100px;
     width: 100px;
     margin: 10px;
+}
+
+/* ========== Section Five ========== */
+
+.container .section .section_five .left_section .left_section_container .project_details {
+    margin: 10% 0;
+}
+.container .section .section_five .left_section .left_section_container .project_details .project_category{
+    font-size: 100%;
+ }
+ .container .section .section_five .left_section .left_section_container .project_details .project_title{
+    font-size: 350%;
+}
+ .container .section .section_five .left_section .left_section_container .project_details .project_title span{
+     /* font-size: 450%; */
+     display: block;
+ }
+ .container .section .section_five .left_section .left_section_container .project_desc{
+     font-size: 150%;
+     margin: -5% 0 0 0;
+ }
+
+
+.container .section .section_five .left_section .left_section_container .project_portrait_image .portrait_image {
+    width: 560px;
+  
+}
+
+.container .section .section_five .right_section .right_section_container .landscape_image{
+    width: 560px;
+    height: 100%;
 }
 
 
@@ -2437,8 +2650,61 @@
     }
 
 
+   
+    /* =========== About Section Mobile ======== */
+
+    .container .section .about_section_mobile .about_section_container h1{
+        font-size: 200%;
+
+    }
+    .container .section .about_section_mobile .about_img {
+        width: 200px;
+        height: 200px;
+        margin: 5% 0%;
+    }
+
+    .container .section .about_section_mobile .about_section_details .about_details {
+        width: 100%;
+        font-size: 80%;
+    }
+    
+    .container .section .about_section_mobile .about_section_details .about_details .name{
+        font-size: 100%;
+    }
 
 
+    .container .section .about_section_mobile .about_contact .contact_info p a {
+        font-size: 1.5rem;
+        color: #000;
+    }
+
+
+  .container .section .about_section_mobile .about_contact .contact_info p {
+        font-size: 1.5rem;
+        color: #000;
+        margin: 2% 0%;
+
+    }
+    .container .section .about_section_mobile .about_contact h1{
+        font-size: 200%;
+      
+    }
+
+    .container .section .about_section_mobile .about_contact .contact_info p {
+        font-size: 80%;
+      
+    }
+   
+    .container .section .about_section_mobile .about_contact .contact_info p a {
+        font-size: 80%;
+      
+    }
+   
+  
+
+
+
+    
         /* ===== Project : Spoonfed, Screen 3 : Section: One and Two ========== */
     
 
@@ -2471,9 +2737,14 @@
             font-size: inherit;
             margin: 0;
         }
+
+        .container .section .section_one .right_section {
+          margin-bottom: -15%;
+        }
         .container .section .section_one .right_section .right_section_container .full_img{
             width: 100%;
-            padding: 5%;
+            padding: 0 5%;
+            margin: 0;
         }
         .container .section .section_two.gridone .right_section .right_section_container .section_video{
             height: 250px;
@@ -2517,11 +2788,13 @@
         .container .section .section_two .middle_section .middle_section_container .section_desc{
             font-size: 60%;
             width: 100%;
-            margin: 15% 0;
+            margin: 10% 0 0 0;
          }
          .container .section .section_two .middle_section .middle_section_container .view_project{
             font-size: 50%;
             padding: 2%;
+            margin-top: 5%;
+
         }
 
           /* ============= Project 2 : Temple of Chroma | Grid ============ */
@@ -2567,7 +2840,6 @@
         }
 
         .container .section .section_two.grid .middle_section .middle_section_container {
-        
             padding: 0 5%;
             margin: 0;
         }
@@ -2695,9 +2967,9 @@
 
        /* ====== Project: India International ====== */
    .container .section .section_two.grid .right_section .right_section_container .landscape_image{
-    width: 400px;
+    width: 100vw;
     height: 100%;
-    padding: 10%;
+    padding: 0 5%;
 }
 
 .container .section .section_two.grid .left_section .left_section_container .gallery_container .galleryseven .gallery_img {
@@ -2706,7 +2978,48 @@
     margin: 5px;
 }
 
-         /* ========= CONTACT SECTION ============ */
+/* ========== Section Five ========== */
+.container .section .section_five .left_section {
+    width: 100%;
+}
+
+.container .section .section_five .left_section .left_section_container .project_details {
+    margin: 7% 0;
+    padding: 0% 0% 0% 5%;
+
+}
+.container .section .section_five .left_section .left_section_container .project_details .project_category{
+    font-size: 70%;
+ }
+ .container .section .section_five .left_section .left_section_container .project_details .project_title{
+    font-size: 200%;
+}
+ .container .section .section_five .left_section .left_section_container .project_details .project_title span{
+     /* font-size: 450%; */
+     display: block;
+ }
+ .container .section .section_five .left_section .left_section_container .project_desc{
+     font-size: 80%;
+     margin: -5% 0 0 0;
+     padding: 0% 0% 0% 5%;
+
+ }
+
+
+.container .section .section_five .left_section .left_section_container .project_portrait_image .portrait_image {
+    width: auto;
+    padding: 0 5%;
+  
+}
+
+.container .section .section_five .right_section .right_section_container .landscape_image{
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0 5%;
+}
+
+ /* ========= CONTACT SECTION ============ */
 
 .container .section .contact_container h1{
     font-size: 200%;
@@ -2736,6 +3049,8 @@
     width: 2rem;
     height: 2rem;
 }
+
+
 
 
 
