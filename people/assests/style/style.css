@@ -1054,7 +1054,8 @@
  /* ======== SECTION 5 ========== */
 
  .container .section .section_five {
-     display: flex;
+     display: grid;
+     grid-template-columns: 50% 50%;
  }
 
  
@@ -1124,15 +1125,16 @@
     
 }
 .container .section .section_five .right_section .right_section_container .landscape_image{
-    width: 540px;
+    min-width: 100%;
     height: 100vh;
+    padding: 0 12%;
 }
 .container .section .section_five .right_section .right_section_container .landscape_image img{
     width: 100%;
     height: 100%;
     background-position: center;
     object-position: center;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .container .section .section_two.land .right_section {
@@ -1149,7 +1151,7 @@
     
 }
 .container .section .section_two.land .right_section .right_section_container .landscape_image{
-    width: 540px;
+    width: auto;
     height: 100vh;
 }
 .container .section .section_two.land .right_section .right_section_container .landscape_image img{
@@ -1239,21 +1241,21 @@
 
 .container .section .section_three{
     display: grid;
-    grid-template-columns: 35% 40% 25%;
+    width: auto;
+    grid-template-columns: 50% auto;
 }
 
 
 .container .section .section_three .right_section{
     height: 100%;
-    width: 100%;
     display: flex;
-    align-items: flex-start;    
+    align-items: flex-start;   
+    
 }
-
 
 .container .section .section_three .right_section .right_section_container .full_img{
     height: 100vh;
-    width: 100%;
+    width: auto;
     
 }
 .container .section .section_three .right_section .right_section_container .full_img img{
@@ -1266,6 +1268,7 @@
     display: flex;
     height: 100%;
     align-items: center;    
+    margin-right: 0%;
 }
 
 .container .section .section_three .left_section .left_section_container{
@@ -1299,8 +1302,9 @@
     display: block;
     position: relative;
     height: auto;
-    /* padding: 0px 20%; */
-    /* margin-left: -20%; */
+    width: auto;
+    padding: 0px 20%;
+    margin-left: -20%;
   
 }
 .container .section .section_three .left_section .left_section_container .project_image img {
@@ -1312,12 +1316,18 @@
     
 }
 
+.container .section .section_three .middle_section{
+    width: auto;
+    margin-right: 8.5%;
+    height: 100%;
 
+}
 .container .section .section_three .middle_section .middle_section_container {
     display: flex;
     height: 100%;
     justify-content: center;
     width: 100%;
+    
   }
   .container .section .section_three .middle_section .middle_section_container .gallery_container .galleryeight{
     display: flex;
@@ -1365,6 +1375,70 @@
      color: #fff;
     }
  
+
+    .container .section .section_three .left_section .left_section_container .gallery_container {
+       /* display: flex; */
+       margin-top: 2.5%;
+       height: auto;
+       width: auto;
+       display: block;
+       padding: 0px 20%;
+       margin-left: -20%;
+       
+    }
+    .container .section .section_three .left_section .left_section_container .gallery_container .galleryeight{
+        display: flex;
+        width: 100%; 
+        justify-content: center;
+        height: 100%;
+
+
+    }
+
+    .container .section .section_three .left_section .left_section_container .gallery_container .galleryeight .gallery_img{
+       width: 100px;
+       height: 100px;
+       margin-left: 3%;
+    }
+
+    .container .section .section_three .left_section .left_section_container .gallery_container .galleryeight .gallery_img img{
+        width: 100%;
+        height: 100%;
+  
+    }
+
+
+    .container .section .section_three .left_section .left_section_container .gallery_container .galleryeight .gallery_img img {
+ 
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        object-fit: cover;
+        opacity: 0.7;
+     }
+     .container .section .section_three .left_section .left_section_container .gallery_container .galleryeight .gallery_img img:hover {
+        opacity: 1;
+     }
+    
+    
+     .container .section .section_three .left_section .left_section_container .gallery_container .galleryeight .gallery_img.hide{
+        display: none;
+    }
+    
+    .container .section .section_three .left_section .left_section_container .gallery_container .galleryeight .gallery_img.next{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+       }
+       .container .section .section_three .left_section .left_section_container .gallery_container .galleryeight .gallery_img.next .nextimages{
+        position: absolute;
+        font-size: 1.5rem;
+        font-family: 'dream_orphansregular';
+        color: #fff;
+       }
+    
+
 
 /* ============= Tablet Responsive Media ============ */
 
@@ -1580,7 +1654,6 @@
         width: 100%;
         object-position: center;
         background-position: center;
-        background-size: contain;
         border-radius: 50%;
 
     }
@@ -2141,6 +2214,7 @@
         padding-right: 0;
         width: 100%;
        margin: 0;
+       
     }
 
     .container .section .section_five .left_section .left_section_container .project_portrait_image .portrait_image {
