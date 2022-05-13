@@ -859,6 +859,22 @@
     background-size: cover;
     object-fit: cover;
  }
+ .container .section .section_two .right_section .right_section_container .section_landscape_image{
+    align-self: center;
+    display: block;
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 0px 10%;
+ }
+ .container .section .section_two .right_section .right_section_container .section_landscape_image img{
+     width: 100%;
+     height: 100%;
+     object-fit: center;
+     background-position: center;
+     background-size: cover;
+ }
+
 
  .container .section .section_two .middle_section .middle_section_container.three {
    display: flex;
@@ -1071,6 +1087,11 @@
 .container .section .section_five .left_section .left_section_container .project_portrait_image{
     display: flex;
     justify-content: stretch;
+    
+}
+.container .section .section_five .left_section .left_section_container .project_portrait_image.hide{
+    display: none;
+    
 }
 
 .container .section .section_five .left_section .left_section_container .project_portrait_image .portrait_image{
@@ -1111,6 +1132,23 @@
     margin-bottom: 20px;
 }
 
+
+.container .section .section_five .left_section .left_section_container  .project_image{
+    align-self: center;
+    display: block;
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 0px 10%;
+    margin-left: -10%;
+
+}
+.container .section .section_five .left_section .left_section_container .project_image img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    object-fit: contain;
+}
 .container .section .section_five .right_section {
     /* width: 100%; */
 }
@@ -1126,7 +1164,7 @@
 }
 .container .section .section_five .right_section .right_section_container .landscape_image{
     min-width: 100%;
-    height: 100vh;
+    height: 100%;
     padding: 0 12%;
 }
 .container .section .section_five .right_section .right_section_container .landscape_image img{
@@ -1134,7 +1172,7 @@
     height: 100%;
     background-position: center;
     object-position: center;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .container .section .section_two.land .right_section {
@@ -1787,10 +1825,30 @@
         padding: 0 12%;
         margin: 0;  
     } 
+
+
     .container .section .section_two .right_section .right_section_container .section_video iframe{
         width: 100%;
         height: 100%;
     }
+
+
+    .container .section .section_two .right_section .right_section_container .section_landscape_image{
+        align-self: center;
+        display: block;
+        position: relative;
+        height: auto;
+        width: auto;
+        padding: 0px 12%;
+        margin-bottom: 5%;
+     }
+    .container .section .section_two .right_section .right_section_container .section_landscape_image img{
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        object-position: center;
+    }
+
 
 
     .container .section .section_two .middle_section {
@@ -2213,9 +2271,15 @@
         align-items: center;
         padding-right: 0;
         width: 100%;
-       margin: 0;
-       
+       margin: 0; 
     }
+    .container .section .section_five .left_section .left_section_container .project_portrait_image.hide{
+      display: block;     
+    }
+    .container .section .section_five .left_section .left_section_container  .project_image.hide{
+       display: none;
+    }
+
 
     .container .section .section_five .left_section .left_section_container .project_portrait_image .portrait_image {
         width: 780px;
@@ -2228,8 +2292,10 @@
         padding: 0;
     }
     .container .section .section_five .right_section .right_section_container .landscape_image{
-        width: 780px;
+        width:760px;
         height: 100%;
+        padding: 0;
+        margin: 0;
     }
 
  /* ========= CONTACT SECTION ============ */
@@ -2853,6 +2919,10 @@
             padding: 0 5%;
         }
 
+        
+    .container .section .section_two .right_section .right_section_container .section_landscape_image{
+        padding: 0px 5%;
+     }
         .container .section .section_two .middle_section .middle_section_container .section_desc{
             font-size: 100%;
             width: 100%;
