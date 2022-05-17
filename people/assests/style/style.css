@@ -850,8 +850,8 @@
 
 .container .section .section_two .right_section .right_section_container .portrait_section{
     width: 360px;
- height: 540px;
- padding: 50px;
+    height: 540px;
+    padding: 50px;
 } 
 .container .section .section_two .right_section .right_section_container .portrait_section video{
     height: 100%;
@@ -1124,7 +1124,7 @@
 .container .section .section_five .left_section .left_section_container .project_details .project_title{
     font-size: 2.2rem;
     white-space: nowrap; 
-    margin-bottom: 2%;
+    /* margin-bottom: 2%; */
 
 }
 .container .section .section_five .left_section .left_section_container .project_details .project_desc{
@@ -1150,22 +1150,21 @@
     object-fit: contain;
 }
 .container .section .section_five .right_section {
-    /* width: 100%; */
+    width: 100%;
+    
 }
 .container .section .section_five .right_section .right_section_container{
     height: 100vh;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-direction: column;
-    /* margin-right: 40px; */
+    justify-content: flex-end;
     
 }
 .container .section .section_five .right_section .right_section_container .landscape_image{
-    min-width: 100%;
     height: 100%;
-    padding: 0 12%;
+    padding: 0%;
+    display: block;
+
 }
 .container .section .section_five .right_section .right_section_container .landscape_image img{
     width: 100%;
@@ -1173,6 +1172,7 @@
     background-position: center;
     object-position: center;
     object-fit: contain;
+    
 }
 
 .container .section .section_two.land .right_section {
@@ -1816,7 +1816,7 @@
         justify-content: center;
         align-items: center;
         height: 100%;
-        margin: 10% 0 0 0;
+        margin: 10% 0 5% 0;
     }
 
     .container .section .section_two .right_section .right_section_container .section_video{
@@ -1882,7 +1882,6 @@
         width: 100%;
     }
     .container .section .section_two .left_section .left_section_container{
-      
         height: 100%;
     }
     
@@ -2260,9 +2259,9 @@
          /* font-size: 450%; */
          display: block;
      }
-     .container .section .section_five .left_section .left_section_container .project_desc{
+     .container .section .section_five .left_section .left_section_container .project_details .project_desc{
          font-size: 200%;
-         margin: -5% 0 0 0;
+         margin: 0;
      }
 
     .container .section .section_five .left_section .left_section_container .project_portrait_image{
@@ -2290,6 +2289,11 @@
     }
     .container .section .section_five .right_section {
         padding: 0;
+    }
+    .container .section .section_five .right_section .right_section_container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     .container .section .section_five .right_section .right_section_container .landscape_image{
         width:760px;
@@ -2488,6 +2492,7 @@
      .container .section .section_one .left_section .left_section_container .project_details .project_desc{
          font-size: 150%;
          margin: 0;
+         
      }
  
      .container .section .section_one .left_section .left_section_container .project_details .project_brief{
@@ -2642,7 +2647,8 @@
  }
  .container .section .section_five .left_section .left_section_container .project_desc{
      font-size: 150%;
-     margin: -5% 0 0 0;
+     margin: 0;
+
  }
 
 
@@ -3144,9 +3150,6 @@
  }
  .container .section .section_five .left_section .left_section_container .project_desc{
      font-size: 80%;
-     margin: -5% 0 0 0;
-     padding: 0% 0% 0% 5%;
-
  }
 
 
