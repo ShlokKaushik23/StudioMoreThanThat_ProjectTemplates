@@ -357,7 +357,10 @@
     font-family: var(--primary_font);   
 }
 .container .section .section_one .left_section .left_section_container .project_details{
-    margin-bottom: 5%;
+    margin-bottom: -2%;
+}
+.container .section .section_one .left_section .left_section_container .project_details.belly{
+    margin-bottom: 2%;
 }
 
 .container .section .section_one .left_section .left_section_container .project_details .project_category{
@@ -2936,8 +2939,9 @@
             margin: 0;
         }
         .container .section .section_one .left_section .left_section_container .project_details .project_brief{
-            font-size: inherit;
+            font-size: 90%;
             margin: 0;
+            /* background-color: red; */
         }
 
         .container .section .section_one .right_section {
@@ -3085,17 +3089,19 @@
 
 
         /* ======== Project : A Where ness || Section One Flip ========= */
-        .container .section .section_one.flip .left_section .left_section_container .project_img_desc p{
-            font-size: 100%;
-            width: 100%;
-            padding: 0;
-        }
-
         .container .section .section_one.flip .left_section .left_section_container .project_img_desc{
             padding: 0% 5%;
             height: 100%;
             display: block;
+            /* background-color: red; */
         }
+        .container .section .section_one.flip .left_section .left_section_container .project_img_desc p{
+            font-size: 90%;
+            width: 100%;
+            padding: 0;
+        }
+
+    
 
 
            /* =========== Project: Ticklish Fruits Section Two Three =========== */
