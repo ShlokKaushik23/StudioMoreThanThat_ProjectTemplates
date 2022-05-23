@@ -2939,10 +2939,11 @@
             font-size: 110%;
             margin: 0;
         }
+
+    
         .container .section .section_one .left_section .left_section_container .project_details .project_brief{
             font-size: 90%;
             margin: 0;
-            /* background-color: red; */
         }
 
         .container .section .section_one .right_section {
@@ -3094,12 +3095,15 @@
             padding: 0% 5%;
             height: 100%;
             display: block;
-            /* background-color: red; */
         }
         .container .section .section_one.flip .left_section .left_section_container .project_img_desc p{
             font-size: 90%;
             width: 100%;
             padding: 0;
+        }
+        .container .section .section_one.flip .left_section .left_section_container .project_details .project_desc{
+            font-size: 100%;
+            margin: 0;
         }
 
     
@@ -3302,8 +3306,139 @@
     margin: 2% 0;
 }
 
+}
 
 
 
+/* ============ Media Queries for Small Screen : 320px =========== */
 
+@media only screen and (max-width: 320px) {
+
+        /* ======= Portfolio Main : Screen 1   ===== */
+    
+        .container .section .section_zero .main .portfolio_details h1{
+            font-size: 70%;
+            letter-spacing: 1.5px;
+        }
+        .container .section .section_zero .main .portfolio_details p{
+            font-size: 70%;
+            letter-spacing: 1.5px;
+        }
+    
+        .container .section .section_zero .main .portfolio_details h2{
+            font-size: 135%;
+            margin-top: 2%;
+        }
+        
+        .container .section .section_zero .main .portfolio_names{
+            margin: -15% 0 0% 5%;
+            
+        }
+     
+        .container .section .section_zero .main .portfolio_names h1{
+            font-size: 80%;
+        }
+        .container .section .section_zero .main .portfolio_names h2{
+            font-size: 70%;
+        } 
+
+
+        .container .section .section_content .left_section .portfolio_content .portfolio_heading h1 {
+            font-size: 135%;
+            margin: 1% 0%;
+        }
+    
+        .container .section .section_content .left_section .portfolio_content .portfolio_category h1 a {
+            font-size: 60%;  
+        }
+        .container .section .section_content .left_section .portfolio_content .portfolio_category p{
+            font-size: 70%;
+            margin: 1px 0;
+        }
+
+
+
+    .container .section .section_two .left_section .left_section_container .gallery_container .galleryfour .gallery_img {
+        height: 60px;
+        width: 60px;    
+        display: block;
+        margin: 5px;
+    
+}
+
+    .container .section .section_two.grid .left_section .left_section_container .gallery_container .gallery .gallery_img {
+        height: 60px;
+        width: 60px;
+        display: block;
+        margin: 5px;
+    
+    }
+
+
+    .container .section .section_two.grid .left_section .left_section_container .gallery_container .galleryfive .gallery_img {
+        height: 60px;
+        width: 60px;
+        display: block;
+        margin: 5px;
+    
+    }
+
+    .container .section .section_two.grid .left_section .left_section_container .gallery_container .gallerysix .gallery_img {
+        height: 60px;
+        width: 60px;
+        display: block;
+        margin: 5px;
+    
+    }
+
+    .container .section .section_two .left_section .left_section_container .gallery_container .gallerythree .gallery_img {
+        height: 60px;
+        width: 60px;
+        display: block;
+        margin: 5px;
+    
+    }
+
+    .container .section .section_two.three .middle_section .middle_section_container.three .gallery_container .gallery_img{
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+        padding: 0;
+    
+        
+    }
+    .container .section .section_three .middle_section .middle_section_container .gallery_container .galleryeight .gallery_img{
+        margin: 5px;
+        width: 60px;
+        height: 60px;
+    
+    }
+    .container .section .section_two.grid .left_section .left_section_container .gallery_container .galleryseven .gallery_img {
+        height: 60px;
+        width: 60px;
+        margin: 5px;
+    
+    }
+
+
+    /* ======= Contact Page ====== */
+    .container .section .contact_container h1{
+        font-size: 180%;
+    }
+    .container .section .contact_container h2{
+        font-size: 130%;
+    }
+    .container .section .contact_container .website{
+        font-size: 100%;
+    }
+    .container .section .contact_container p{
+        font-size: 60%;
+        margin-bottom: 2%;
+    }
+    
+    .container .section .contact_container p a {
+        color: #010101;    
+        font-size: 0.8rem;
+    
+    }
 }
